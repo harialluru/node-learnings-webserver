@@ -51,6 +51,13 @@ app.get('/about',(req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        message: 'Projects portfolio here'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send('Unable to handle server request.');
 });
